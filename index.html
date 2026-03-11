@@ -154,7 +154,7 @@
             color: #2c3e50;
         }
 
-        .useful-links-list a:visited{
+        .useful-links-list a:visited {
             color: #3498db;
         }
 
@@ -301,18 +301,18 @@
         }
 
         #page-footer {
-            background-color: #34495e; 
-            color: #ecf0f1;            
+            background-color: #34495e;
+            color: #ecf0f1;
             text-align: center;
             padding: 20px 0;
-            margin-top: 40px;          
+            margin-top: 40px;
         }
 
         #page-footer p {
             margin: 5px 0;
             font-size: 0.9rem;
         }
-        
+
         #page-footer address {
             font-style: normal;
         }
@@ -420,13 +420,13 @@
 
         .back-top-btn {
             display: inline-block;
-            color: #7f8c8d;       
+            color: #7f8c8d;
             font-size: 0.9rem;
             border: 1px solid #ccc;
             padding: 5px 15px;
             border-radius: 20px;
             transition: 0.3s;
-            
+
         }
 
         .back-top-btn:hover {
@@ -576,6 +576,43 @@
         .styled-form input[type="reset"]:hover {
             background-color: #3498db;
         }
+
+        /*svg*/
+        #cat{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        #cat-head {
+            fill: #2980b9;
+            stroke: #34495e;
+            stroke-width: 3;
+        }
+
+        .ear {
+            fill: #2980b9;
+            stroke: #34495e;
+            stroke-width: 3;
+        }
+
+        .eye {
+            fill: #2c3e50;
+            transition: fill 0.3s ease;
+        }
+
+        #cat-nose {
+            fill: black;
+        }
+
+        #cat:hover .eye {
+            fill: #27ae60;
+        }
+
+        #header-icon{
+            position: relative;
+        }
+
     </style>
 
 </head>
@@ -588,11 +625,11 @@
                 <li><a href="../Week1/index.html">Week 1</a></li>
                 <li><a href="../Week2/index.html">Week 2</a></li>
                 <li><a href="../Week3/index.html">Week 3</a></li>
-                <li><a class="active" href="../Week4/index.html">Week 4</a></li>
-                <li><a href="#">Week 5</a></li>
+                <li><a href="../Week4/index.html">Week 4</a></li>
+                <li><a class="active" href="#">Week 5</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="header-icon">
             <div class="welcome">
                 <h1>Welcome to Web Design and Development</h1>
 
@@ -603,6 +640,30 @@
                     <a class="round-btn" href="#contact">Contact</a>
                 </div>
             </div>
+
+            <svg id="cat" width="100" height="100" viewBox="0 0 200 200">
+                <title>cat</title>
+                <desc>A cat drawn with svg</desc>
+                <g id="head">
+                    <circle id="cat-head" cx="100" cy="100" r="50" />
+                </g>
+
+                <g id="ears">
+                    <polygon class="ear" points="60,65 75,40 90,65" fill="#f4a460" stroke="#8B4513" stroke-width="3" />
+                    <polygon class="ear" points="110,65 125,40 140,65" fill="#f4a460" stroke="#8B4513"
+                        stroke-width="3" />
+                </g>
+
+                <g id="eyes">
+                    <circle class="eye" cx="85" cy="95" r="8" fill="#2c3e50" />
+                    <circle class="eye" cx="115" cy="95" r="8" fill="#2c3e50" />
+                </g>
+
+                <g id="nose">
+                    <ellipse id="nose" cx="100" cy="115" rx="5" ry="4" fill="#ff9999" />
+                </g>
+
+            </svg>
         </div>
 
     </header>
@@ -615,19 +676,19 @@
             </div>
             <p class="intro-txt">
                 <strong><u>Istiaq</u> Abdullah</strong><br>
-                <span class="id-badge" id="student-id">w2063860</span>
-
+                <code class="id-badge" id="student-id">w2063860</code>
 
             </p>
-            <p>Currently in: <strong>Year 1</strong> | Module: <strong>Web Design and Development</strong></p>
+            <p>Currently in: <strong>Year 1</strong> | Module: <strong>Web
+                    Design and Development</strong></p>
 
             <div class="action-buttons">
                 <a href="mailto:w2063860@westminster.ac.uk" aria-label="Send an email to Istiaq" class="mail-btn">Mail
                     me</a>
-                <a target="_blank" href="https://uk.linkedin.com/in/istiaqabdullah" target="_blank" class="social-btn">LinkedIn</a>
+                <a target="_blank" href="https://uk.linkedin.com/in/istiaqabdullah" target="_blank"
+                    class="social-btn">LinkedIn</a>
                 <a target="_blank" href="https://github.com/dthwwydfli" class="social-btn">GitHub</a>
             </div>
-
 
             <hr>
             <h3 class="title">Useful links</h3>
@@ -641,11 +702,6 @@
                         University Timetable </a></li>
             </ul>
         </div>
-
-
-
-
-
 
         <div class="main-card">
             <h2>Module expectations</h2>
@@ -662,21 +718,19 @@
                 Understanding JavaScript
             </p>
 
-
             <h2>Goals for this module</h2>
             <p> In this module I want to become good at coding HTML, CSS and
                 JavaScript so that way I can implement it in
                 other aspects of my life.</p>
 
             <h2>Interests and Hobbies</h2>
-            <p>I enjoy going to the gym, attending mma classes and eating food.</p>
-            <p>I also enjoy going on travelling and going on hikes, this year I
+            <p>I enjoy going to the gym, attending mma classes and eating
+                food.</p>
+            <p>I also enjoy going on travelling and going on hikes, this
+                year I
                 want to travel to a number of countries
                 and try different cusines.</p>
         </div>
-
-
-
 
         <div class="main-card">
 
@@ -719,8 +773,6 @@
                 </tbody>
             </table>
         </div>
-
-
 
         <div class="main-card">
             <h2 id="ttb">Timetable</h2>
@@ -772,127 +824,140 @@
             </table>
         </div>
 
-
-
         <div class="main-card">
 
             <h2 id="ref">Reflection</h2>
             <div class="reflection">
                 <p>
-                    I found challenging to undertand how to style css and had to
+                    I found challenging to undertand how to style css and
+                    had to
                     reflect on it as there is many ways to style it.
-                    I found challenging when having to create the classes for each
+                    I found challenging when having to create the classes
+                    for each
                     class and assign them.
                 </p>
                 <p>
-                    I found intresting and surprising how you can code html and css
-                    in the same file and will reflect on it and try improve myself
+                    I found intresting and surprising how you can code html
+                    and css
+                    in the same file and will reflect on it and try improve
+                    myself
                     so that
                     I am able to style css in different format.
-                    I found intresting and surprising how you can style any elements
+                    I found intresting and surprising how you can style any
+                    elements
                     using html.
                 </p>
                 <p>
-                    I am confident about understanding html and will reflect on it
-                    and improve myself so that I am able to do it without struggling
+                    I am confident about understanding html and will reflect
+                    on it
+                    and improve myself so that I am able to do it without
+                    struggling
                     and
                     can make different type of websites.
-                    I am confident about understanding html and css and will reflect
-                    on it to improve so that I am able to style anything without
+                    I am confident about understanding html and css and will
+                    reflect
+                    on it to improve so that I am able to style anything
+                    without
                     issues
                     and taking too much time to think.
                 </p>
+                <p>
+                    I chose my animal to be a cat
+                </p>
                 <ol>
-                    <li>I found challenging to undertand how to color tables and
+                    <li>I found challenging to undertand how to color tables
+                        and
                         style lists and tables</li>
-                    <li>I found challenging on figuring out how to create the rows
+                    <li>I found challenging on figuring out how to create
+                        the rows
                         and columns when creating the timetable</li>
+                    <li>I found it challenging understanding SVG and interactivity</li>
 
                 </ol>
                 <ul>
-                    <li>I found intresting and surprising on how to create table
+                    <li>I found intresting and surprising on how to create
+                        table
                         rows and columns</li>
-                    <li>I found intresting and surprising on how to color each box
+                    <li>I found intresting and surprising on how to color
+                        each box
                         in the tables</li>
                 </ul>
             </div>
         </div>
 
+        <div class="main-card">
+            <h2 id="contact">Contact me</h2>
+            <form class="styled-form" action="mailto:w2063860@westminster.ac.uk" method="post" enctype="text/plain">
 
-    <div class="main-card">
-        <h2 id="contact">Contact me</h2>
-        <form class="styled-form" action="mailto:w2063860@westminster.ac.uk" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <div class="form-group">
+                        <label for="name">Name: <span style="color:red">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: <span style="color:red">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role:</label>
+                        <select id="role" name="role">
+                            <option value="student">Student</option>
+                            <option value="tutor">Tutor</option>
+                        </select>
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <legend>Contact Details</legend>
-                <div class="form-group">
-                    <label for="name">Name: <span style="color:red">*</span></label>
-                    <input type="text" id="name" name="name" required placeholder="Full Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email: <span style="color:red">*</span></label>
-                    <input type="email" id="email" name="email" required placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="role">Role:</label>
-                    <select id="role" name="role">
-                        <option value="student">Student</option>
-                        <option value="tutor">Tutor</option>
-                    </select>
-                </div>
-            </fieldset>
+                <fieldset>
+                    <legend>Survey</legend>
 
-            <fieldset>
-                <legend>Survey</legend>
-
-                <div class="float-container">
-                    <div class="float-left">
-                        <p><strong>Interests:</strong></p>
-                        <div class="option-group">
-                            <input type="checkbox" id="html" name="interests" value="HTML" checked>
-                            <label style="display:inline" for="html">HTML</label>
+                    <div class="float-container">
+                        <div class="float-left">
+                            <p><strong>Interests:</strong></p>
+                            <div class="option-group">
+                                <input type="checkbox" id="html" name="interests" value="HTML" checked>
+                                <label style="display:inline" for="html">HTML</label>
+                            </div>
+                            <div class="option-group">
+                                <input type="checkbox" id="css" name="interests" value="CSS">
+                                <label style="display:inline" for="css">CSS</label>
+                            </div>
                         </div>
-                        <div class="option-group">
-                            <input type="checkbox" id="css" name="interests" value="CSS">
-                            <label style="display:inline" for="css">CSS</label>
+
+                        <div class="float-right">
+                            <p><strong>Best Time:</strong></p>
+                            <div class="option-group">
+                                <input type="radio" id="am" name="time" value="morning">
+                                <label style="display:inline" for="am">Morning</label>
+                            </div>
+                            <div class="option-group">
+                                <input type="radio" id="pm" name="time" value="afternoon">
+                                <label style="display:inline" for="pm">Afternoon</label>
+                            </div>
                         </div>
                     </div>
+                </fieldset>
 
-                    <div class="float-right">
-                        <p><strong>Best Time:</strong></p>
-                        <div class="option-group">
-                            <input type="radio" id="am" name="time" value="morning">
-                            <label style="display:inline" for="am">Morning</label>
-                        </div>
-                        <div class="option-group">
-                            <input type="radio" id="pm" name="time" value="afternoon">
-                            <label style="display:inline" for="pm">Afternoon</label>
-                        </div>
+                <fieldset style="clear: both;">
+                    <legend>Message</legend>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
                     </div>
-                </div>
-            </fieldset>
+                </fieldset>
 
-            <fieldset style="clear: both;">
-                <legend>Message</legend>
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                <div class="form-buttons">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Send">
                 </div>
-            </fieldset>
+            </form>
 
-            <div class="form-buttons">
-                <input type="reset" value="Reset">
-                <input type="submit" value="Send">
+            <div style="margin-top: 20px;">
+                <a href="#" class="back-top-btn">Back to top</a>
             </div>
-        </form>
-
-        <div style="margin-top: 20px;">
-            <a href="#" class="back-top-btn">Back to top</a>
         </div>
-    </div>
     </main>
-    
-    
+
     <footer id="page-footer">
         <address>w2063860@westminster.ac.uk</address>
         Last modified date: 06/02/26
@@ -901,3 +966,4 @@
 </body>
 
 </html>
+
